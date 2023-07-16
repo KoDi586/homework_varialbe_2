@@ -6,6 +6,9 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
+        task8();
     }
 
     public static void task1() {
@@ -86,19 +89,86 @@ public class Main {
         System.out.println("\nРешение задачи ниже: \n classRoom = allJar / (white + brown); \n whiteJar = classRoom * white;");
         System.out.println(" brownJar = allJar - whiteJar.");
     }
+
+    public static void task6() {
+        System.out.println("\nЗадача 6");
+
+        byte countBanana = 5;
+        byte weightBanana = 80;
+        byte countMilk = 2;
+        byte weightMilk = 105;
+        byte countIceCream = 2;
+        byte weightIceCream = 100;
+        byte countEggs = 4;
+        byte weightEggs = 70;
+        int allWeight_g = countBanana * weightBanana + countEggs * weightEggs + countIceCream * weightIceCream + countMilk * weightMilk;
+        float allWeight_Kg = allWeight_g / 1000f;
+
+        System.out.println("В коктеле спортсмена " + allWeight_g + " грамм или " + allWeight_Kg + " килограмм");
+        System.out.println("\nРешение задачи ниже: \n allWeight_g = countBanana * weightBanana + countEggs * weightEggs + countIceCream * weightIceCream + countMilk * weightMilk;");
+        System.out.println(" allWeight_Kg = allWeight_g / 1000f;");
+    }
+
+    public static void task7() {
+        System.out.println("\nЗадача 7");
+
+        short loseWeight = 7000;
+        short minWeight = 250;
+        short maxWeight = 500;
+        int daysMin = loseWeight / maxWeight;
+        int daysMax = loseWeight / minWeight;
+        int daysMiddle = (daysMax + daysMin) / 2;
+
+        System.out.println("Сбрасывая каждый день по " + minWeight + " можно сбросить 7 кг за " + daysMax + " дней.");
+        System.out.println("Сбрасывая каждый день по " + maxWeight + " можно сбросить 7 кг за " + daysMin+ " дней.");
+        System.out.println("В среднем сбросить 7 кг можно за " + daysMiddle + " дней.");
+
+        System.out.println("\nРешение задачи ниже: \n daysMin = loseWeight / maxWeight;");
+        System.out.println(" daysMax = loseWeight / minWeight; \n daysMiddle = (daysMax + daysMin) / 2.");
+    }
+
+    public static void task8() {
+        System.out.println("\nЗадача 8");
+
+        int moneyMisha = 67_760;
+        int moneyDenis = 83_690;
+        int moneyKristina = 76_230;
+        float percentage = 1.1f;
+        float yearDifMisha = moneyMisha * percentage * 12 - moneyMisha * 12;
+        float yearDifDenis = moneyDenis * percentage * 12 - moneyDenis * 12;
+        float yearDifKristina = moneyKristina * percentage * 12 - moneyKristina * 12;
+
+        System.out.println("Денис теперь получает " + moneyDenis * percentage + " рублей. Годовой доход вырос на " + yearDifDenis + " рублей");
+        System.out.println("Миша теперь получает " + moneyMisha * percentage + " рублей. Годовой доход вырос на " + yearDifMisha + " рублей");
+        System.out.println("Кристина теперь получает " + moneyKristina * percentage + " рублей. Годовой доход вырос на " + yearDifKristina + " рублей");
+    }
+
+
+
+
 }
-//Задача 5
-//        На ремонт школы нужно 120 банок краски двух цветов: белой и коричневой.
-//        На один класс уходит 2 банки белой и 4 банки коричневой краски. Сколько банок каждой краски было куплено?
-//        Выведите результат задачи в консоль в формате:
-//        «В школе, где … классов, нужно … банок белой краски и … банок коричневой краски».
-//        Для объявления переменных не используйте тип var.
+//Задача 8
+//Представим, что мы работаем в большой компании, штат которой состоит из нескольких сотен сотрудников.
+// В компании есть правило: чем дольше сотрудник работает в компании,
+// тем ценнее он для бизнеса. Поэтому сотрудники, которые работают в компании дольше 3 лет, получают повышение зарплаты раз в год.
+// Каждый год повышение составляет 10% от текущей зарплаты.
+//
+//К вам пришел руководитель с задачей автоматизировать повышение зарплаты, а также провести расчет для следующих сотрудников:
+//
+//Маша получает 67 760 рублей в месяц.
+//Денис получает 83 690 рублей в месяц.
+//Кристина получает 76 230 рублей в месяц.
+//Каждому нужно увеличить зарплату на 10% от текущей месячной.
+// Дополнительно руководитель попросил посчитать разницу между годовым доходом с нынешней зарплатой и после повышения.
+//
+//Посчитайте, сколько будет получать каждый из сотрудников, а также разницу между годовым доходом до и после повышения.
+//
+//Выведите в консоль информацию по каждому сотруднику. Например: «Маша теперь получает ... рублей. Годовой доход вырос на ... рублей».
 //
 //
 //
-//        Критерии оценки
-//        Корректно использовали типы переменных.
-//        В решении не использовали тип переменной var.
-//        Переменные назвали согласно правилам Java.
-//        Соблюдаются правила пунктуации.
-//        Решение задания вывели в консоль.
+//Критерии оценки
+//Корректно использовали типы переменных.
+//Операцию умножения выполнили верно.
+//Операцию сложения выполнили верно.
+//Все условия задания выполнили.
